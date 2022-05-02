@@ -2,8 +2,9 @@ const formEl = document.getElementById('form')
 
 let userAnswers = []
 let index = 1,
-checkedIn = false
+  checkedIn = false
 
+//array with right answer numbers
 const rightAnswers = ['4', '2', '1', '2']
 
 const questionsArray = [
