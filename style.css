@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+body {
+  /* display props */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* position props */
+  /* box model props */
+  overflow: hidden;
+  height: 100vh;
+  background-color: #c7d2e2;
+  /* typography  props */
+  font-family: 'Open Sans', sans-serif;
+  /* misc */
+}
+
+.container {
+  background-color: #fff;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0px 0px 7px rgba(0 0 0 / 20%);
+  overflow: hidden;
+  font-size: 2rem;
+  width: 70%;
+  max-width: 600px;
+}
+
+.question {
+  text-align: center;
+  padding: 2rem 3rem 0;
+  font-weight: bolder;
+  font-size: 1.7rem;
+}
+
+.answers {
+  padding: 2rem;
+}
+
+.form-input {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 1.65rem;
+  margin: 0.5em 0 0 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+button[type='submit'],
+[type='reset'] {
+  background-color: #935abd;
+  padding: 0.5rem 2rem;
+  border: none;
+  width: 100%;
+  font-size: 1.4rem;
+  color: #fff;
+  cursor: pointer;
+  padding: 1.3rem;
+  margin-top: 20px;
+}
+
+button[type='submit']:is(:focus, :active) {
+  background-color: #6b3294;
+}
+
+button[type='submit']:hover {
+  background-color: #7a43a1;
+}
