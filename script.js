@@ -1,4 +1,5 @@
 //TEST BRANCH
+//get a ref to html form
 const formEl = document.getElementById('form')
 
 let userAnswers = []
