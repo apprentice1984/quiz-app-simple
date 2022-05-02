@@ -1,6 +1,6 @@
 //TEST BRANCH
 //get a ref to html form
-const formEl = document.getElementById('form')
+const formElement = document.getElementById('form')
 
 let userAnswers = []
 let index = 1,
@@ -35,7 +35,7 @@ const answersArray = [
 
 updateForm()
 
-formEl.addEventListener('submit', (e) => {
+formElement.addEventListener('submit', (e) => {
   e.preventDefault()
 
   //Проверить ответы
@@ -58,7 +58,7 @@ formEl.addEventListener('submit', (e) => {
       }
     }
 
-    formEl.innerHTML = `
+    formElement.innerHTML = `
     <h3 style='font-size:1.7rem; text-align: center'>You answered ${count}/4 questions correctly</h3>
      <div>
           <button type="reset" onclick='location.reload();'>Reload</button>
@@ -95,7 +95,7 @@ function updateForm(index = 0) {
           <button type="submit">Submit</button>
         </div>
 `
-  formEl.innerHTML = formContainer
+  formElement.innerHTML = formContainer
 }
 
 //Проверить ответ и добавить в массив ответов
